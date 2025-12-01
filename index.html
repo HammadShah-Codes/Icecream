@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IceCream Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #f8b9c8;
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
+        .header {
+            width: 100%;
+            height: 90px;
+            background: #f8b9c8;
+            position: relative;
+        }
+
+        .logo {
+            width: 140px;
+            margin: 25px 40px;
+            vertical-align: middle;
+        }
+
+        .menu {
+            list-style: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 35px;
+            left: 260px;
+        }
+
+        .menu li {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            display: inline-block;
+            margin: 0 25px;
+            font-size: 18px;
+            color: #c21a35;
+            cursor: pointer;
+        }
+
+        .buy-btn {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            position: absolute;
+            right: 40px;
+            top: 25px;
+            padding: 12px 28px;
+            border: 0;
+            border-radius: 30px;
+            background: white;
+            color: #c21a35;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* LEFT SECTION */
+        .left-section {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 70px;
+            margin-top: 40px;
+        }
+
+        .left-section h1 {
+            font-family: "Titan One", sans-serif;
+            font-size: 55px;
+            line-height: 60px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .left-section h1 span {
+            color: #bd1230;
+        }
+
+        .product-btn {
+            background: #bd1230;
+            color: white;
+            border: 0;
+            padding: 16px 35px;
+            border-radius: 40px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .how-btn {
+            background: white;
+            color: #c21a35;
+            border: 0;
+            padding: 16px 35px;
+            border-radius: 40px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .milk-box {
+            margin-top: 40px;
+        }
+
+        .milk-img {
+            width: 130px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .milk-box p {
+            display: inline-block;
+            width: 220px;
+            margin-left: 20px;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* RIGHT CIRCLE BACKGROUND */
+        .right-circle {
+            width: 530px;
+            height: 530px;
+            background: #f5a6bb;
+            border-radius: 50%;
+            position: absolute;
+            right: 150px;
+            top: 110px;
+            z-index: 1;
+        }
+
+        /* MAIN ICE CREAM IMAGE */
+        .big-ice {
+            position: absolute;
+            right: 310px;
+            top: 170px;
+            width: 200px;
+            z-index: 2;
+        }
+
+        /* NUMBERS */
+        .numbers {
+            position: absolute;
+            right: 70px;
+            top: 220px;
+            text-align: center;
+        }
+
+        .num-block {
+            margin-bottom: 140px;
+        }
+
+        .num-block h2 {
+              font-family: "Titan One", sans-serif;
+            font-size: 60px;
+            color: #c21a35;
+            margin: 0;
+        }
+
+        .num-block p {
+            font-family: "DM Sans", sans-serif;
+
+            color: white;
+            font-size: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./logo.png" class="logo">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About us</li>
+            <li>How it's made?</li>
+            <li>Our products</li>
+            <li>Contact</li>
+        </ul>
+
+        <button class="buy-btn">Buy now →</button>
+    </div>
+
+
+    <div class="left-section">
+        <h1>ICE CREAM<br>MADE WITH<br><span>PASSION</span></h1>
+
+        <button class="product-btn">Products</button>
+        <button class="how-btn">How it’s made?</button>
+
+        <div class="milk-box">
+            <img src="./milk.png" class="milk-img">
+            <p>Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit,<br>
+                sed do eiusmod tempor<br>
+                incididunt ut labore et</p>
+        </div>
+    </div>
+
+    <div class="right-circle"></div>
+
+    <img src="./main-ice-cream.png" class="big-ice">
+
+    <div class="numbers">
+        <div class="num-block">
+            <h2>16</h2>
+            <p>cafes</p>
+        </div>
+
+        <div class="num-block">
+            <h2>23</h2>
+            <p>food trucks</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
